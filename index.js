@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 
 const port = process.env.PORT || 3000;
-const enrouteApi = require('./routes/enroute-api');
+const enrouteApi = require('./src/routes/enroute-api');
 const morgan = require('morgan');
-const handler = require('./err/handler');
-const notFound = require('./err/not-found');
+const handler = require('./src/err/handler');
+const notFound = require('./src/err/not-found');
 
 // app.use(morgan("dev"));
 
