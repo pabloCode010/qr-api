@@ -7,7 +7,7 @@ const morgan = require('morgan');
 const handler = require('./err/handler');
 const notFound = require('./err/not-found');
 
-app.use(morgan("combined"));
+// app.use(morgan("dev"));
 
 enrouteApi(app);
 
