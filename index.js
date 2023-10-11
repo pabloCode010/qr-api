@@ -4,11 +4,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 const enrouteApi = require('./src/routes/enroute-api');
 const morgan = require('morgan');
+const cors = require("cors");
 const handler = require('./src/err/handler');
 const notFound = require('./src/err/not-found');
 
 // app.use(morgan("dev"));
 
+app.use(cors());
 enrouteApi(app);
 
 app.use(notFound);
